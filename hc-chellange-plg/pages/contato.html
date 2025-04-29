@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Fmusp Telemedicina</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logohc.png" alt="Logo Fmusp">
+                    <span>Fmusp</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">INÍCIO</a></li>
+                    <li><a href="perguntas-frequentes.html">PERGUNTAS FREQUENTES</a></li>
+                    <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>CONTATO</h1>
+                <p class="contact-intro">Entre em contato conosco para mais informações sobre nossos serviços de telemedicina.</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>INFORMAÇÕES DE CONTATO</h2>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>0800 123 4567</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>contato@fmusp.com.br</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Av. Dr. Enéas Carvalho de Aguiar, 255 - Cerqueira César, São Paulo - SP</p>
+                        </div>
+                        
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>ENVIE SUA MENSAGEM</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome*</label>
+                                <input type="text" id="nome" name="nome" required>
+                                <span class="error-message" id="nome-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail*</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem*</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                                <span class="error-message" id="mensagem-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn">ENVIAR MENSAGEM</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>LINKS RÁPIDOS</h3>
+                    <ul>
+                        <li><a href="../index.html">INÍCIO</a></li>
+                        <li><a href="#">SERVIÇOS</a></li>
+                        <li><a href="#">COMO FUNCIONA</a></li>
+                        <li><a href="#">PARA EMPRESAS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>SERVIÇOS</h3>
+                    <ul>
+                        <li><a href="#">CONSULTAS ONLINE</a></li>
+                        <li><a href="#">PRONTO ATENDIMENTO</a></li>
+                        <li><a href="#">SEGUNDA OPINIÃO MÉDICA</a></li>
+                        <li><a href="#">TELEMEDICINA PARA EMPRESAS</a></li>
+                        <li><a href="#">TELEMEDICINA PARA HOSPITAIS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>CONTATO</h3>
+                    <p>0800 123 4567</p>
+                    <p>CONTATO@FMUSP.COM.BR</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© PLUS SOLUTIONS. TODOS DIREITOS RESERVADOS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

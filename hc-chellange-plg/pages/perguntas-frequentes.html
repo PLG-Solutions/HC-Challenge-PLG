@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes - Fmusp Telemedicina</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logohc.png" alt="Logo Fmusp">
+                    <span>Fmusp</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">INÍCIO</a></li>
+                    <li><a href="perguntas-frequentes.html">PERGUNTAS FREQUENTES</a></li>
+                    <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>LINKS RÁPIDOS</h3>
+                    <ul>
+                        <li><a href="../index.html">INÍCIO</a></li>
+                        <li><a href="perguntas-frequentes.html">PERGUNTAS FREQUENTES</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>SERVIÇOS</h3>
+                    <ul>
+                        <li><a href="#">CONSULTAS ONLINE</a></li>
+                        <li><a href="#">PRONTO ATENDIMENTO</a></li>
+                        <li><a href="#">SEGUNDA OPINIÃO MÉDICA</a></li>
+                        <li><a href="#">TELEMEDICINA PARA EMPRESAS</a></li>
+                        <li><a href="#">TELEMEDICINA PARA HOSPITAIS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>CONTATO</h3>
+                    <p>0800 123 4567</p>
+                    <p>CONTATO@FMUSP.COM.BR</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© PLUS SOLUTIONS. TODOS DIREITOS RESERVADOS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script>
+        // Script específico para a página de FAQ
+        document.addEventListener('DOMContentLoaded', function() {
+            // Funcionalidade de acordeão para as perguntas
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    // Toggle da classe active na pergunta clicada
+                    this.classList.toggle('active');
+                    
+                    // Toggle do ícone
+                    const icon = this.querySelector('.toggle-icon i');
+                    if (icon.classList.contains('fa-chevron-down')) {
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                    
+                    // Toggle da resposta
+                    const answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+            
+            // Funcionalidade de busca
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        
+                        // Expandir automaticamente os itens encontrados
+                        const questionEl = item.querySelector('.faq-question');
+                        const answerEl = item.querySelector('.faq-answer');
+                        const icon = questionEl.querySelector('.toggle-icon i');
+                        
+                        questionEl.classList.add('active');
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                        answerEl.style.maxHeight = answerEl.scrollHeight + "px";
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Se o termo de busca estiver vazio, mostrar todos os itens
+                if (searchTerm === '') {
+                    faqItems.forEach(item => {
+                        item.style.display = 'block';
+                        
+                        // Fechar todos os itens
+                        const questionEl = item.querySelector('.faq-question');
+                        const answerEl = item.querySelector('.faq-answer');
+                        const icon = questionEl.querySelector('.toggle-icon i');
+                        
+                        questionEl.classList.remove('active');
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                        answerEl.style.maxHeight = null;
+                    });
+                }
+            }
+            
+            searchButton.addEventListener('click', performSearch);
+            
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
