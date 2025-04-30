@@ -1,41 +1,41 @@
 .search-container {
-    max-width: 600px;
-    margin: 40px auto 40px auto;
-    display: flex;
-    gap: 10px;
-    background: #fff;
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.291);
-  }
+  max-width: 600px;
+  margin: 40px auto 40px auto;
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.291);
+}
 
-  .search-container input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-  }
+.search-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
 
-  .search-container button {
-    background: var(--hover-blue);
-    border: none;
-    color: white;
-    padding: 0 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s;
-  }
+.search-container button {
+  background: var(--hover-blue);
+  border: none;
+  color: white;
+  padding: 0 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
 
-  .search-container button:hover {
-    background: var(--dark-blue-bg);
-  }
+.search-container button:hover {
+  background: var(--dark-blue-bg);
+}
 
-  .search-container button:active {
-    background: var(--dark-blue-bg);
+.search-container button:active {
+  background: var(--dark-blue-bg);
 }
 
 .results {
@@ -44,13 +44,14 @@
   margin: auto;
   display: grid;
   margin-bottom: 10%;
-  }
-  
-  .item a {
+}
+
+.item a {
   width: 100%;
   max-width: 800px;
-  }
-  .results a {
+}
+
+.results a {
   padding: 20px;
   border: 1px solid var(--hover-blue);
   margin: 10px 0px;
@@ -62,19 +63,19 @@
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  }
-  
-  .results a:hover {
+}
+
+.results a:hover {
   background: var(--fundoaviso);
   color: var(--botoeshover);
-  
-  }
-  
-  ::placeholder {
+
+}
+
+::placeholder {
   font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .aviso{
+}
+
+.aviso {
   max-width: 800px;
   width: 100%;
   margin: 35px auto;
@@ -84,18 +85,18 @@
   border: 1px solid rgba(0, 0, 93, 0.171);
   background: var(--light-blue);
   border-radius: 10px;
-  
-  }
-  
-  .aviso p,span{
+
+}
+
+.aviso p,
+span {
   font-family: arial;
   color: var(--hover-blue);
-  }
-  
-  .aviso span{
+}
+
+.aviso span {
   font-family: arial;
   color: var(--hover-blue);
   font-weight: bold;
-  }
-
+}
 

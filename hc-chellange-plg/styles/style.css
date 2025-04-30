@@ -1,6 +1,10 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+@font-face {
+    font-family: lemon;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
 /* Variáveis de cores */
 :root {
     --primary-blue: #0077c7;

@@ -1,0 +1,110 @@
+
+* {
+    /* border: 1px solid red; */
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco1{
+    margin: 5% 0px;
+    width: 600px;
+    height: 100%;
+    border: 2px solid var(--hover-blue);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bloco1 p {
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 20px ;
+}
+
+.bloco1 h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--hover-blue);
+}
+
+.bloco2{
+    margin: 5% 0px;
+    width: 500px;
+    height: 100%;
+    border-radius: 60px;
+    padding: 20px;
+    background: linear-gradient(97deg,rgba(255, 255, 255, 0) 0%, rgba(0, 119, 199, 0.603) 84%);
+}
+.pedro,.gustavo,.lucas {
+    display: flex;
+}
+
+.texto {
+    justify-content: center;
+    text-align: justify;
+    padding-top: 60px;
+    font-size: 23px;
+    font-family: lemon;
+    font-weight: 580;
+}
+
+.texto .textoalternativo{
+    font-size: 15px;
+    font-weight: none;
+}
+
+span {
+    color: var(--hover-blue);
+}
+
+.img {
+    width: 200px;
+    filter: drop-shadow(1px 1px 20px #00000025);
+}
+
+.contato {
+ margin-bottom: 40px;
+ background: #d9edf6;
+ padding: 30px;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--hover-blue);
+    margin-bottom: 30px;
+}
+.container-contato {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    max-width: 200px;
+    height: 430px;
+    max-height: 350px;
+    margin: 0px 5%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 30px;
+
+}
+
+.card img {
+    width: 200px;
+}
+
+.card a {
+    margin-top: 30px;
+    color: var(--hover-blue);
+    font-size: 20px;
+    font-family: lemon;
+    text-align: justify;
+
+}
+
+.card a:hover {
+    color: rgb(0, 30, 163);
+    
+}
