@@ -6,6 +6,7 @@
     <title>Perguntas Frequentes - Fmusp Telemedicina</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/faq.css">
 </head>
 <body>
     <header>
@@ -29,9 +30,33 @@
         </div>
     </header>
 
-    <main>
+    <main class="faq">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Digite ou fale para buscar...">
+            <button id="voiceBtn" title="Clique para falar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white">
+                    <path
+                        d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 8v-3.1q-2.85-.35-4.725-2.4T4.2 12h2.05q.375 2.075 1.975 3.538Q9.825 17 12 17t3.775-1.462Q17.375 14.075 17.75 12h2.05q-.475 2.85-2.35 4.9T13 18.9V22Z" />
+                </svg>
+            </button>
+        </div>
+        
+        <div class="aviso">
+            <p><span>Dica! </span>Para uma melhor pesquisa, use palavras-chave ou tópicos de ajuda como: senha, login, teleconsulta, entre outros. Isso facilita o sistema a entender o que você precisa e traz resultados mais precisos e úteis. Quanto mais direto for o termo usado, mais fácil será encontrar a resposta certa para sua dúvida.</p>
+        </div>
+
+        <div class="results" id="results">
+            <a href="pages/perguntas/cadastro.html" class="item">Como cadastrar no aplicativo (Portal Paciente)</a>
+            <a href="#" class="item">Onde eu acesso meus resultados?</a>
+            <a href="#" class="item">Esqueceu a senha?</a>
+            <a href="#" class="item">Onde pego minhas receitas?</a>
+            <a href="#" class="item">Como acessar minha teleconsulta?</a>
+            <a href="#" class="item">Como fazer a solicitação de exames?</a>
+          </div>
         
 
+
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -57,34 +82,32 @@
 
                 <div class="footer-contact">
                     <h3>CONTATO</h3>
-                    <p>0800 123 4567</p>
-                    <p>CONTATO@FMUSP.COM.BR</p>
+                    <p>0000 0000 000</p>
+                    <p>RM0000@FIAP.COM.BR</p>
                     <div class="social-media">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/PLG-Solutions"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>© PLUS SOLUTIONS. TODOS DIREITOS RESERVADOS</p>
+                <p>© PLG SOLUTIONS. TODOS DIREITOS RESERVADOS</p>
             </div>
         </div>
     </footer>
 
+    <script src="../scripts/pesquisafacil.js"></script>
     <script src="../scripts/script.js"></script>
     <script>
-        // Script específico para a página de FAQ
         document.addEventListener('DOMContentLoaded', function() {
-            // Funcionalidade de acordeão para as perguntas
             const faqQuestions = document.querySelectorAll('.faq-question');
             
             faqQuestions.forEach(question => {
                 question.addEventListener('click', function() {
-                    // Toggle da classe active na pergunta clicada
+                   
                     this.classList.toggle('active');
                     
-                    // Toggle do ícone
                     const icon = this.querySelector('.toggle-icon i');
                     if (icon.classList.contains('fa-chevron-down')) {
                         icon.classList.remove('fa-chevron-down');
@@ -94,7 +117,6 @@
                         icon.classList.add('fa-chevron-down');
                     }
                     
-                    // Toggle da resposta
                     const answer = this.nextElementSibling;
                     if (answer.style.maxHeight) {
                         answer.style.maxHeight = null;
@@ -104,7 +126,7 @@
                 });
             });
             
-            // Funcionalidade de busca
+           
             const searchInput = document.getElementById('searchInput');
             const searchButton = document.getElementById('searchButton');
             const faqItems = document.querySelectorAll('.faq-item');
@@ -119,7 +141,7 @@
                     if (question.includes(searchTerm) || answer.includes(searchTerm)) {
                         item.style.display = 'block';
                         
-                        // Expandir automaticamente os itens encontrados
+                      
                         const questionEl = item.querySelector('.faq-question');
                         const answerEl = item.querySelector('.faq-answer');
                         const icon = questionEl.querySelector('.toggle-icon i');
@@ -133,7 +155,7 @@
                     }
                 });
                 
-                // Se o termo de busca estiver vazio, mostrar todos os itens
+                
                 if (searchTerm === '') {
                     faqItems.forEach(item => {
                         item.style.display = 'block';
