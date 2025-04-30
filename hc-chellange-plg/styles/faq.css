@@ -38,4 +38,64 @@
     background: var(--dark-blue-bg);
 }
 
+.results {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  margin-bottom: 10%;
+  }
+  
+  .item a {
+  width: 100%;
+  max-width: 800px;
+  }
+  .results a {
+  padding: 20px;
+  border: 1px solid var(--hover-blue);
+  margin: 10px 0px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.051);
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.743);
+  font-weight: 600px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  }
+  
+  .results a:hover {
+  background: var(--fundoaviso);
+  color: var(--botoeshover);
+  
+  }
+  
+  ::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .aviso{
+  max-width: 800px;
+  width: 100%;
+  margin: 35px auto;
+  padding: 20px;
+  text-align: justify;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 93, 0.171);
+  background: var(--light-blue);
+  border-radius: 10px;
+  
+  }
+  
+  .aviso p,span{
+  font-family: arial;
+  color: var(--hover-blue);
+  }
+  
+  .aviso span{
+  font-family: arial;
+  color: var(--hover-blue);
+  font-weight: bold;
+  }
+
 
