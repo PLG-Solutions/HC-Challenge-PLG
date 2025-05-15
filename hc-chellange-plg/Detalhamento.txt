@@ -1,0 +1,53 @@
+1. Descrição da Oportunidade
+A oportunidade aqui é a criação de uma aplicação web integrada ao aplicativo do Hospital das Clínicas, com o foco em otimizar a experiência dos usuários e melhorar a acessibilidade e interação dos pacientes com os serviços do hospital. A aplicação terá uma área de Perguntas Frequentes (FAQ) de fácil acesso e funcionalidades como pesquisa por áudio, botão flutuante com tutoriais rápidos e orientações de acessibilidade para videoconferências. Esse conjunto de ferramentas visa tornar a interação mais intuitiva, especialmente para pacientes com diferentes níveis de familiaridade com tecnologia, e facilitar a comunicação, tanto em consultas à distância quanto em agendamentos de exames e consultas. A aplicação será, portanto, uma solução inclusiva e prática, que proporciona maior autonomia e conforto aos usuários.
+
+2. Análise do Potencial
+Essa solução tem um alto potencial de impacto, pois visa resolver problemas comuns enfrentados por pacientes, como dificuldade em navegar por interfaces digitais e falta de suporte adequado para pessoas com diferentes habilidades tecnológicas. Além disso, a implementação da pesquisa por áudio permitirá uma interação mais intuitiva e rápida, o que pode atrair pacientes com limitações de mobilidade ou dificuldade de leitura. A criação de tutoriais rápidos e acessíveis também ajudará a aumentar a adaptação dos pacientes que não estão acostumados com o uso de tecnologia. A funcionalidade de geração de arquivos .ics (iCalendar) vai facilitar a gestão de compromissos e aumentar o comprometimento com os agendamentos de consultas e exames. Isso pode resultar em maior adesão ao tratamento e redução de faltas, além de melhorar a imagem digital do hospital.
+
+3. Análise de Riscos
+Embora a ideia seja promissora, há desafios tecnológicos que devem ser considerados. Um dos principais riscos é a necessidade de integração perfeita entre o aplicativo web e o sistema do Hospital das Clínicas, que pode demandar complexidade técnica e tempo para implementação. Além disso, o desenvolvimento de funcionalidades de acessibilidade deve ser feito com precisão, já que, caso a implementação não seja adequada, pode acabar não atendendo às necessidades dos pacientes com deficiências ou dificuldades de navegação. O uso de pesquisa por áudio, por exemplo, pode enfrentar limitações de precisão dependendo da qualidade do reconhecimento de voz e da diversidade de sotaques dos usuários. Outro risco envolve o treinamento de usuários para o uso dessas ferramentas, pois, apesar de ser intuitivo, nem todos os pacientes podem se adaptar facilmente ao novo sistema. Finalmente, pode haver resistência de pacientes mais tradicionais, que preferem métodos convencionais de comunicação.
+
+4. Benefícios Esperados
+Os benefícios dessa aplicação são amplos e incluem:
+
+Aumento da acessibilidade: A solução será inclusiva, atendendo a pacientes com diferentes habilidades tecnológicas, incluindo pessoas com deficiência visual ou motora.
+
+Facilidade na navegação: Com a pesquisa por áudio e o botão flutuante com tutoriais rápidos, os pacientes terão mais autonomia para buscar informações e solucionar dúvidas, sem precisar de ajuda externa.
+
+Melhoria na comunicação: A orientação para uso de câmera e iluminação facilitará as consultas à distância e o envio de exames, garantindo qualidade de imagem e precisão na comunicação.
+
+Maior engajamento: A funcionalidade de geração de arquivos .ics para compromissos proporcionará maior organização pessoal e redução de faltas, impactando positivamente a adesão ao tratamento.
+
+Redução de custos operacionais: O uso dessas tecnologias pode diminuir a carga de trabalho das equipes de suporte, uma vez que os pacientes terão mais recursos para se orientar de forma independente.
+
+Com isso, a aplicação contribuirá diretamente para a melhoria da experiência do paciente e ajudará o hospital a ser visto como uma instituição inovadora e preocupada com o bem-estar de seus usuários.
+
+5. Plano de Ação
+O desenvolvimento da aplicação será dividido em algumas etapas principais:
+
+Planejamento e pesquisa de necessidades: Levantamento de dados sobre as necessidades dos pacientes, análise das funcionalidades do sistema do Hospital das Clínicas e identificação das melhores práticas de acessibilidade.
+
+Desenvolvimento do MVP: Criação de uma versão inicial da aplicação com foco nas funcionalidades principais (FAQ, pesquisa por áudio, botão flutuante e geração de .ics).
+
+Testes de usabilidade: Realização de testes com grupos de pacientes de diferentes faixas etárias e habilidades para garantir a acessibilidade e a eficácia das funcionalidades.
+
+Implementação de melhorias: Com base nos feedbacks dos testes, ajustes serão feitos na interface e nas funcionalidades para otimizar a experiência.
+
+Lançamento gradual: Disponibilização da aplicação para grupos selecionados de pacientes, seguida de um lançamento completo, com acompanhamento do desempenho e ajustes contínuos.
+
+Os responsáveis serão os times de desenvolvimento web, design de interface, especialistas em acessibilidade e equipe do hospital para integração com os sistemas existentes.
+
+6. Métricas e Indicadores
+As métricas para avaliar o sucesso da aplicação incluirão:
+
+Taxa de uso da aplicação: Monitoramento de quantos pacientes estão utilizando a nova funcionalidade, como a pesquisa por áudio, e se ela está sendo eficaz.
+
+Feedback de usuários: Avaliação da satisfação dos pacientes com a facilidade de uso e a acessibilidade da aplicação.
+
+Redução de faltas: Monitoramento das taxas de faltas em consultas e exames antes e depois da implementação da geração de arquivos .ics.
+
+Adoção de tutoriais e suporte: Medição de quantos usuários interagem com o botão flutuante de tutoriais rápidos.
+
+Melhoria na comunicação: Monitoramento do número de consultas realizadas sem falhas devido à orientação sobre câmera e iluminação.
+
+Esses indicadores serão essenciais para avaliar se a aplicação está atingindo seus objetivos de melhorar a experiência do paciente, aumentar a adesão ao tratamento e reduzir erros de comunicação e agendamento.
