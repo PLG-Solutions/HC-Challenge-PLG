@@ -25,6 +25,11 @@ Estudantes de Análise e Desenvolvimento de Sistemas na **FIAP – Unidade Lins*
 📂 pages/
 │  ├─ index.html                     - Página inicial com apresentação do projeto
 │  ├─ perguntas-frequentes.html      - Página de perguntas frequentes com busca inteligente
+│  ├─ perguntas1                     - Página de tutoriais
+│  ├─ perguntas2                     - Página de tutoriais
+│  ├─ perguntas3                     - Página de tutoriais
+│  ├─ perguntas4                     - Página de tutoriais
+│  ├─ perguntas5                     - Página de tutoriais
 │  ├─ contato.html                   - Para enviar uma menssagem para o nosso sistema
 │  └─ quem-somos.html                - Página de apresentação da equipe
 
@@ -34,6 +39,7 @@ Estudantes de Análise e Desenvolvimento de Sistemas na **FIAP – Unidade Lins*
 
 📂 styles/
 │  ├─ style.css
+│  ├─ qm-somos.css
 │  └─ faq.css
 ```
 
@@ -53,7 +59,7 @@ Estudantes de Análise e Desenvolvimento de Sistemas na **FIAP – Unidade Lins*
 
 - HTML5
 - CSS3
-- JavaScript Vanilla
+- JavaScript
 - Web Speech API (Reconhecimento de Voz)
 
 ---
