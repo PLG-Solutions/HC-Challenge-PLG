@@ -98,6 +98,16 @@
         </section>
     </main>
 
+    
+  <button id="tutorial-btn">!</button>
+
+  
+  <div id="tutorial-panel">
+    <iframe id="tutorial-video" allowfullscreen></iframe>
+    <p>Assista esse tutorial em vídeo para entender como acessar o aplicativo PortalPaciente da melhor forma possivel. A explicação é rápida e prática!</p>
+  </div>
+
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -140,5 +150,24 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script>
+  const tutorialBtn = document.getElementById('tutorial-btn');
+  const tutorialPanel = document.getElementById('tutorial-panel');
+  const tutorialVideo = document.getElementById('tutorial-video');
+
+  let painelAberto = false;
+
+  tutorialBtn.addEventListener('click', () => {
+    painelAberto = !painelAberto;
+    if (painelAberto) {
+      tutorialPanel.style.display = 'block';
+      tutorialVideo.src = "/hc-chellange-plg/images/entrandoprimeiravez.mp4"; 
+    } else {
+      tutorialPanel.style.display = 'none';
+      tutorialVideo.src = "";
+    }
+  });
+</script>
+
 </body>
 </html>

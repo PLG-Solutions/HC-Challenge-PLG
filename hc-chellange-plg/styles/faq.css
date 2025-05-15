@@ -100,3 +100,90 @@ span {
   font-weight: bold;
 }
 
+.tutorial-container {
+  text-align: justify;
+  max-width: 600px;
+  width: 100%;
+  margin: 6% auto;
+  
+
+}
+
+.tutorial-container li {
+  margin: 20px 0px;
+}
+
+/* Botão flutuante */
+#tutorial-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #1351b4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 9999;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Painel do tutorial */
+#tutorial-panel {
+  position: fixed;
+  top: 10%;
+  right: 60px;
+  width: 360px;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: none;
+  z-index: 9998;
+}
+
+#tutorial-panel iframe {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: none;
+  border-radius: 8px;
+}
+
+#tutorial-panel p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #tutorial-btn {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 15px;
+    padding: 12px 16px;
+    font-size: 20px;
+  }
+
+  #tutorial-panel {
+    right: 10px;
+    left: 10px;
+    top: auto;
+    bottom: 80px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  #tutorial-panel iframe {
+    aspect-ratio: 9 / 16;
+    height: auto;
+  }
+
+}

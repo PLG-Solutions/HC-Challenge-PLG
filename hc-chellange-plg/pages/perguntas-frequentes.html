@@ -54,6 +54,16 @@
           </div>
         
     </main>
+
+    <button id="tutorial-btn">!</button>
+
+  
+  <div id="tutorial-panel">
+    <iframe id="tutorial-video" allowfullscreen></iframe>
+    <p>Assista esse tutorial em vídeo para entender como acessar o aplicativo PortalPaciente da melhor forma possivel. A explicação é rápida e prática!</p>
+  </div>
+
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -96,87 +106,22 @@
     <script src="../scripts/pesquisafacil.js"></script>
     <script src="../scripts/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                   
-                    this.classList.toggle('active');
-                    
-                    const icon = this.querySelector('.toggle-icon i');
-                    if (icon.classList.contains('fa-chevron-down')) {
-                        icon.classList.remove('fa-chevron-down');
-                        icon.classList.add('fa-chevron-up');
-                    } else {
-                        icon.classList.remove('fa-chevron-up');
-                        icon.classList.add('fa-chevron-down');
-                    }
-                    
-                    const answer = this.nextElementSibling;
-                    if (answer.style.maxHeight) {
-                        answer.style.maxHeight = null;
-                    } else {
-                        answer.style.maxHeight = answer.scrollHeight + "px";
-                    }
-                });
-            });
-            
-           
-            const searchInput = document.getElementById('searchInput');
-            const searchButton = document.getElementById('searchButton');
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            function performSearch() {
-                const searchTerm = searchInput.value.toLowerCase();
-                
-                faqItems.forEach(item => {
-                    const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
-                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
-                    
-                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
-                        item.style.display = 'block';
-                        
-                      
-                        const questionEl = item.querySelector('.faq-question');
-                        const answerEl = item.querySelector('.faq-answer');
-                        const icon = questionEl.querySelector('.toggle-icon i');
-                        
-                        questionEl.classList.add('active');
-                        icon.classList.remove('fa-chevron-down');
-                        icon.classList.add('fa-chevron-up');
-                        answerEl.style.maxHeight = answerEl.scrollHeight + "px";
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-                
-                
-                if (searchTerm === '') {
-                    faqItems.forEach(item => {
-                        item.style.display = 'block';
-                        
-                        // Fechar todos os itens
-                        const questionEl = item.querySelector('.faq-question');
-                        const answerEl = item.querySelector('.faq-answer');
-                        const icon = questionEl.querySelector('.toggle-icon i');
-                        
-                        questionEl.classList.remove('active');
-                        icon.classList.remove('fa-chevron-up');
-                        icon.classList.add('fa-chevron-down');
-                        answerEl.style.maxHeight = null;
-                    });
-                }
-            }
-            
-            searchButton.addEventListener('click', performSearch);
-            
-            searchInput.addEventListener('keyup', function(event) {
-                if (event.key === 'Enter') {
-                    performSearch();
-                }
-            });
-        });
-    </script>
+  const tutorialBtn = document.getElementById('tutorial-btn');
+  const tutorialPanel = document.getElementById('tutorial-panel');
+  const tutorialVideo = document.getElementById('tutorial-video');
+
+  let painelAberto = false;
+
+  tutorialBtn.addEventListener('click', () => {
+    painelAberto = !painelAberto;
+    if (painelAberto) {
+      tutorialPanel.style.display = 'block';
+      tutorialVideo.src = "/hc-chellange-plg/images/entrandoprimeiravez.mp4"; 
+    } else {
+      tutorialPanel.style.display = 'none';
+      tutorialVideo.src = "";
+    }
+  });
+</script>
 </body>
 </html>
