@@ -11,9 +11,9 @@ O sistema oferece tutoriais, perguntas frequentes com busca inteligente e interf
 
 ## 👥 Equipe de Desenvolvimento
 
-- **Pedro Gomes (19 anos)** – Desenvolvedor Full-Stack  
-- **Lucas Lopes (20 anos)** – Desenvolvedor Back-End  
-- **Gustavo Freire (18 anos)** – Desenvolvedor Back-End  
+- **Pedro Gomes (19 anos)** – Desenvolvedor Full-Stack  RM:562606
+- **Lucas Lopes (20 anos)** – Desenvolvedor Back-End    RM:563544
+- **Gustavo Freire (18 anos)** – Desenvolvedor Back-End RM:561334
 
 Estudantes de Análise e Desenvolvimento de Sistemas na **FIAP – Unidade Lins**.
 
